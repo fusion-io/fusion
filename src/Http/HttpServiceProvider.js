@@ -21,7 +21,7 @@ export default class HttpServiceProvider extends FrameworkProvider {
         const kernel = super.bootstrapKernel();
         const config = this.container.resolve(Config);
 
-        // TODO applying kernel tweak here.
+        // This is the place you can play around with the kernel and middlewares
         kernel.use(koaStatic(config.get('http.static.root'), config.get('http.static.opts')));
 
         return kernel;
@@ -34,7 +34,7 @@ export default class HttpServiceProvider extends FrameworkProvider {
     bootstrapRoutes() {
         const router = super.bootstrapRoutes();
 
-        // TODO applying router tweak here.
+        // This is the place you can play around with the router and route middlewares
         router.get('/user/:name', context => context.body = {message: `Hi ${context.params.name}`});
 
         return router;

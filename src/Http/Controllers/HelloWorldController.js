@@ -6,6 +6,6 @@ class HelloWorldController {
 
     @get('/')
     index(context) {
-        context.body = {message: this.helloService.run()};
+        context.body = {message: "Hello World"};
     }
 }

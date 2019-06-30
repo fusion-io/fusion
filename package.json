@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prod": "NODE_ENV=production node build/bootstrap.js",
+    "start": "nodemon --exec babel-node --watch src  --watch config src/bootstrap.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d build"
   },
@@ -33,6 +35,7 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.4.5",
     "@babel/register": "^7.4.4",
-    "babel-plugin-dynamic-import-node": "^2.3.0"
+    "babel-plugin-dynamic-import-node": "^2.3.0",
+    "nodemon": "^1.19.1"
   }
 }
