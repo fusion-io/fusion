@@ -17,7 +17,10 @@ module.exports = {
 
     logger: {
         level: 'info',
-        format: winston.format.json(),
+        format: winston.format.combine(
+            winston.format.timestamp(),
+            winston.format.simple()
+        ),
         defaultMeta: { service: 'user-service' },
         transports: [
             new winston.transports.File({ filename: path.resolve(__dirname + '/../storage/logs/error.log'), level: 'error' }),
