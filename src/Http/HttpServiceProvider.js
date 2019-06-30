@@ -24,6 +24,15 @@ export default class HttpServiceProvider extends FrameworkProvider {
         // This is the place you can play around with the kernel and middlewares
         kernel.use(koaStatic(config.get('http.static.root'), config.get('http.static.opts')));
 
+        // Handling error
+        kernel.use(async (context, next) => {
+            try {
+                await next();
+            } catch (err) {
+                context.app.emit('error', err, context);
+            }
+        });
+
         return kernel;
     }
 

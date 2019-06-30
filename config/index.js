@@ -1,6 +1,13 @@
 const path      = require('path');
 const winston   = require('winston');
 
+/**
+ * This is the default application configuration. If you switch your environment by setting NODE_ENV environment
+ * variable, related environment-based configuration will be merged with this configuration.
+ *
+ * Please check the config/env.js for environment-based configuration.
+ *
+ */
 module.exports = {
 
     /**
@@ -11,6 +18,13 @@ module.exports = {
      *
      */
     env: process.env.NODE_ENV || 'local',
+
+    /**
+     * Debugging flag. If this config is set to true, the application will
+     * show a pretty debugging UI when the server encounter any un-expected error.
+     *
+     */
+    debug: process.env.APP_DEBUG || false,
 
     /**
      * The HTTP configuration
@@ -62,6 +76,7 @@ module.exports = {
         /**
          * Application services
          */
-        './Http/HttpServiceProvider'
+        './Http/HttpServiceProvider',
+        './ErrorHandler/ErrorHandlerServiceProvider'
     ]
 };
