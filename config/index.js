@@ -3,10 +3,18 @@ const winston   = require('winston');
 
 module.exports = {
 
-    env: process.env.NODE_ENV || "local",
+    /**
+     * Application environment. By switching the application environment,
+     * we'll change the application configuration.
+     *
+     * Therefore, your application behavior changes.
+     *
+     */
+    env: process.env.NODE_ENV || 'local',
 
     /**
      * The HTTP configuration
+     *
      */
     http: {
         port: process.env.PORT || 3000,
@@ -20,7 +28,10 @@ module.exports = {
 
     /**
      * The logger service is actually the winston logger. So if you want to customize the logger
-     * Please refer to the winston document: https://www.npmjs.com/package/winston
+     * Please refer to the winston document.
+     *
+     * @link(https://www.npmjs.com/package/winston
+     *
      */
     logger: {
         level: 'info',
@@ -38,13 +49,14 @@ module.exports = {
     /**
      * List of the service providers used in your application
      * Feel free to add more service provider if needed. It's your choice!
+     *
      */
     providers: [
 
         /**
          * Fusion services
          */
-        "@fusion.io/framework/Logger/LoggerServiceProvider",
+        '@fusion.io/framework/Logger/LoggerServiceProvider',
 
 
         /**
