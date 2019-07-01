@@ -20,6 +20,12 @@ module.exports = {
     env: process.env.NODE_ENV || 'local',
 
     /**
+     * The application security keys.
+     *
+     */
+    keys: [process.env.APP_KEY || 'some-secret-key'],
+
+    /**
      * Debugging flag. If this config is set to true, the application will
      * show a pretty debugging UI when the server encounter any un-expected error.
      *
@@ -31,12 +37,34 @@ module.exports = {
      *
      */
     http: {
+
         port: process.env.PORT || 3000,
+
+        /**
+         * We are using the koa-static middleware for serving the static content. Nothing special about it.
+         * @see https://github.com/koajs/static
+         */
         static: {
             root: path.resolve(__dirname + '/../public'),
             opts: {
-
+                // Other options here
             }
+        },
+
+        /**
+         * The session service is running with underlying layer is koa-session middleware. Here we can configure that middleware
+         *
+         * @see https://github.com/koajs/session for more configuration options.
+         */
+        session: {
+            key: 'fusion:session',
+            maxAge: 86400000,
+            autoCommit: true,
+            overwrite: true,
+            httpOnly: true,
+            signed: true,
+            rolling: false,
+            renew: false,
         }
     },
 
@@ -71,7 +99,7 @@ module.exports = {
          * Fusion services
          */
         '@fusion.io/framework/Logger/LoggerServiceProvider',
-        '@fusion.io/framework/Session/SessionsServiceProvider',
+        '@fusion.io/framework/Session/SessionServiceProvider',
 
 
         /**
