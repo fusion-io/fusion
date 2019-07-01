@@ -1,4 +1,5 @@
-import {container, Config} from "@fusion.io/bare";
+import {container} from "@fusion.io/container";
+import {Config} from '@fusion.io/framework';
 import {KERNEL, REGISTRY, registry, ROUTER} from "@fusion.io/framework/Http";
 import ConfigManager from "@fusion.io/framework/Config/ConfigManager";
 

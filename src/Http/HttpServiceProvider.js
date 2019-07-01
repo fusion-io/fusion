@@ -1,4 +1,4 @@
-import {Config} from "@fusion.io/bare";
+import {Config} from "@fusion.io/framework";
 import FrameworkProvider from "@fusion.io/framework/Http/HttpServiceProvider";
 import koaStatic from "koa-static";
 
@@ -40,7 +40,7 @@ export default class HttpServiceProvider extends FrameworkProvider {
     bootstrapKernel() {
 
         const kernel = super.bootstrapKernel();
-        const config = this.container.resolve(Config);
+        const config = this.container.make(Config);
 
         // This is the place you can play around with the kernel and middlewares
         kernel.use(koaStatic(config.get('http.static.root'), config.get('http.static.opts')));

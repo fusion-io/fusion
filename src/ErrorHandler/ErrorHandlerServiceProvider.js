@@ -1,5 +1,4 @@
-import ServiceProvider from "@fusion.io/bare/utils/ServiceProvider";
-import {Config, Logger} from "@fusion.io/bare";
+import {Config, Logger, ServiceProvider} from "@fusion.io/framework";
 import Ouch from "ouch";
 import {KERNEL} from "@fusion.io/framework/Http";
 
