@@ -39,6 +39,8 @@ container.value(Config, config);
     // After the registration has been finished, we'll start bootstrap the services.
     providers.forEach(provider => provider.boot());
 
+    console.log(container);
+
     // Start the web server
     kernel.listen(config.get('http.port'));
 })();
