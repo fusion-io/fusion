@@ -1,8 +1,8 @@
-import {Config} from "@fusion.io/framework";
-import FrameworkProvider from "@fusion.io/framework/Http/HttpServiceProvider";
+import {HttpServiceProvider as FrameworkProvider} from "@fusion.io/framework";
 import koaStatic from "koa-static";
 
 import HelloWorldController from "./Controllers/HelloWorldController";
+import {Config} from "@fusion.io/framework/Contracts";
 
 /**
  * Our HttpServiceProvider, here we can specify how our Http layer works. We can tweak it from a simple API server

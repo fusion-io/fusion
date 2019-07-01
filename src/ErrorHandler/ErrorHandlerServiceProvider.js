@@ -1,6 +1,6 @@
-import {Config, Logger, ServiceProvider} from "@fusion.io/framework";
 import Ouch from "ouch";
-import {KERNEL} from "@fusion.io/framework/Http";
+import {ServiceProvider} from "@fusion.io/framework";
+import {Config, Kernel, Logger} from "@fusion.io/framework/Contracts";
 
 export default class ErrorHandlerServiceProvider extends ServiceProvider {
     register() {
@@ -10,7 +10,7 @@ export default class ErrorHandlerServiceProvider extends ServiceProvider {
     }
 
     boot() {
-        const kernel = this.container.make(KERNEL);
+        const kernel = this.container.make(Kernel);
         const config = this.container.make(Config);
         const ouch   = this.container.make("Ouch");
         const logger = this.container.make(Logger);

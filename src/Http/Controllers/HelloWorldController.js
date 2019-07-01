@@ -1,5 +1,4 @@
-import {get} from "@fusion.io/framework/Http";
-import {singleton} from "@fusion.io/container";
+import {singleton, get} from "@fusion.io/framework";
 
 @singleton()
 export default class HelloWorldController {

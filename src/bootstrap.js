@@ -1,18 +1,17 @@
-import {container} from "@fusion.io/container";
-import {Config} from '@fusion.io/framework';
-import {KERNEL, REGISTRY, registry, ROUTER} from "@fusion.io/framework/Http";
 import ConfigManager from "@fusion.io/framework/Config/ConfigManager";
+import {registry, container} from "@fusion.io/framework";
 
 import configValue from "./../config";
 import environmentConfig from "./../config/env";
 
 import Koa from "koa";
-import Router from "koa-router";
+import KoaRouter from "koa-router";
+import {Config, Kernel, Registry, Router} from "@fusion.io/framework/Contracts";
 
 
 // First we'll instantiate Koa, KoaRouter and ConfigManager
 const kernel = new Koa();
-const router = new Router();
+const router = new KoaRouter();
 const config = new ConfigManager(configValue);
 
 // Overwrite the config base on the application's environment
@@ -20,9 +19,9 @@ config.setEnv(config.get('env'), environmentConfig[config.get('env')]);
 
 
 // Initialize the ServiceContainer with initial services in it.
-container.value(KERNEL, kernel);
-container.value(ROUTER, router);
-container.value(REGISTRY, registry);
+container.value(Kernel, kernel);
+container.value(Router, router);
+container.value(Registry, registry);
 container.value(Config, config);
 
 
@@ -38,8 +37,6 @@ container.value(Config, config);
 
     // After the registration has been finished, we'll start bootstrap the services.
     providers.forEach(provider => provider.boot());
-
-    console.log(container);
 
     // Start the web server
     kernel.listen(config.get('http.port'));
