@@ -57,9 +57,9 @@ module.exports = {
          * @see https://github.com/koajs/session for more configuration options.
          */
         session: {
+            // We ignored autoCommit option, since the framework will handle it by itself
             key: 'fusion:session',
             maxAge: 86400000,
-            autoCommit: true,
             overwrite: true,
             httpOnly: true,
             signed: true,
