@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/fusion-io/fusion#readme",
   "dependencies": {
-    "@fusion.io/bare": "^1.1.5",
+    "@fusion.io/bare": "^1.1.6",
     "@fusion.io/framework": "^1.1.7",
     "koa": "^2.7.0",
     "koa-router": "^7.4.0",
