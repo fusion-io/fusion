@@ -1,16 +1,37 @@
 import {Config} from "@fusion.io/bare";
 import FrameworkProvider from "@fusion.io/framework/Http/HttpServiceProvider";
-
 import koaStatic from "koa-static";
 
-// import your controller here to make it works
-import "./Controllers/HelloWorldController";
+import HelloWorldController from "./Controllers/HelloWorldController";
 
 /**
  * Our HttpServiceProvider, here we can specify how our Http layer works. We can tweak it from a simple API server
  * to even very sophisticated Web application
  */
 export default class HttpServiceProvider extends FrameworkProvider {
+
+    get controllers() {
+        return [
+            HelloWorldController
+        ]
+    }
+
+    get middlewares() {
+        return {
+            "api": [
+
+            ],
+            "web": [
+
+            ]
+        }
+    }
+
+    get globalMiddlewares() {
+        return [
+
+        ]
+    }
 
     /**
      * Our Kernel is just a Koa app instance.
