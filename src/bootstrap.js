@@ -1,12 +1,12 @@
 import ConfigManager from "@fusion.io/framework/Config/ConfigManager";
-import {registry, container} from "@fusion.io/framework";
+import {container} from "@fusion.io/framework";
 
 import configValue from "./../config";
 import environmentConfig from "./../config/env";
 
 import Koa from "koa";
 import KoaRouter from "koa-router";
-import {Config, Kernel, Registry, Router} from "@fusion.io/framework/Contracts";
+import {Config, Kernel, Router} from "@fusion.io/framework/Contracts";
 
 
 // First we'll instantiate Koa, KoaRouter and ConfigManager
@@ -21,7 +21,6 @@ config.setEnv(config.get('env'), environmentConfig[config.get('env')]);
 // Initialize the ServiceContainer with initial services in it.
 container.value(Kernel, kernel);
 container.value(Router, router);
-container.value(Registry, registry);
 container.value(Config, config);
 
 

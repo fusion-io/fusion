@@ -1,72 +1,43 @@
-import {HttpServiceProvider as FrameworkProvider} from "@fusion.io/framework";
-import koaStatic from "koa-static";
-
+import {HttpServiceProvider as FrameworkProvider, SessionStartMiddleware as StartSession} from "@fusion.io/framework";
 import HelloWorldController from "./Controllers/HelloWorldController";
-import {Config} from "@fusion.io/framework/Contracts";
+import CatchError from "./Middlewares/CatchError";
+import ServeStatic from "./Middlewares/ServeStatic";
 
 /**
- * Our HttpServiceProvider, here we can specify how our Http layer works. We can tweak it from a simple API server
- * to even very sophisticated Web application
+ * Our HttpServiceProvider, here we can specify how our Http layer works.
+ * We can tweak it from a simple API server to very sophisticated Web application.
+ *
  */
 export default class HttpServiceProvider extends FrameworkProvider {
 
-    get controllers() {
+    /**
+     * List of controllers that will be used
+     *
+     * @return Array
+     */
+    controllers() {
         return [
             HelloWorldController
         ]
     }
 
-    get middlewares() {
+    middlewareGroups() {
         return {
+
             "api": [
 
             ],
-            "web": [
 
+            "web": [
+                StartSession
             ]
         }
     }
 
-    get globalMiddlewares() {
+    globalMiddlewares() {
         return [
-
+            ServeStatic,
+            CatchError
         ]
-    }
-
-    /**
-     * Our Kernel is just a Koa app instance.
-     *
-     */
-    bootstrapKernel() {
-
-        const kernel = super.bootstrapKernel();
-        const config = this.container.make(Config);
-
-        // This is the place you can play around with the kernel and middlewares
-        kernel.use(koaStatic(config.get('http.static.root'), config.get('http.static.opts')));
-
-        // Handling error
-        kernel.use(async (context, next) => {
-            try {
-                await next();
-            } catch (err) {
-                context.app.emit('error', err, context);
-            }
-        });
-
-        return kernel;
-    }
-
-    /**
-     * Our Router is just a KoaRouter instance.
-     *
-     */
-    bootstrapRoutes() {
-        const router = super.bootstrapRoutes();
-
-        // This is the place you can play around with the router and route middlewares
-        router.get('/user/:name', context => context.body = {message: `Hi ${context.params.name}`});
-
-        return router;
     }
 }
