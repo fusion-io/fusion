@@ -71,6 +71,7 @@ module.exports = {
          * Fusion services
          */
         '@fusion.io/framework/Logger/LoggerServiceProvider',
+        '@fusion.io/framework/Session/SessionsServiceProvider',
 
 
         /**
