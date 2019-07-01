@@ -69,6 +69,14 @@ module.exports = {
     },
 
     /**
+     * The hasher configuration. Now we only supported BCrypt
+     *
+     */
+    hash: {
+        rounds: 10
+    },
+
+    /**
      * The logger service is actually the winston logger. So if you want to customize the logger
      * Please refer to the winston document.
      *
@@ -100,6 +108,7 @@ module.exports = {
          */
         '@fusion.io/framework/Logger/LoggerServiceProvider',
         '@fusion.io/framework/Session/SessionServiceProvider',
+        '@fusion.io/framework/Hasher/BCryptHasherServiceProvider',
 
 
         /**

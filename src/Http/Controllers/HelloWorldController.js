@@ -5,14 +5,9 @@ import SessionStartMiddleware from "@fusion.io/framework/Session/SessionStartMid
 @singleton()
 class HelloWorldController {
 
-    @get('/', [SessionStartMiddleware])
+    @get('/')
     index(context) {
-        const {Session} = context;
 
-        const count = Session.get('count', 0);
-
-        Session.set('count', count + 1);
-
-        context.body = {message: "Hello World", count};
+        context.body = {message: "Hello World"};
     }
 }
