@@ -1,8 +1,7 @@
-import {singleton, middleware} from "@fusion.io/framework";
+import {singleton} from "@fusion.io/framework";
 import {get} from "@fusion.io/framework/Http/HttpResolver";
 
 @singleton()
-@middleware('web')
 export default class HelloWorldController {
 
     @get('/')
