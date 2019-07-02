@@ -65,6 +65,16 @@ module.exports = {
             signed: true,
             rolling: false,
             renew: false,
+        },
+
+        /**
+         * Override URL
+         */
+        url: {
+            replace: process.env.HTTP_URL_REPLACE || false,
+            pathMap: {
+                'HelloWorldController.index': '/people/:name'
+            }
         }
     },
 
