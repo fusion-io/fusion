@@ -1,22 +1,41 @@
 import ConfigManager from "@fusion.io/framework/Config/ConfigManager";
 import {container} from "@fusion.io/framework";
-
 import configValue from "./../config";
 import environmentConfig from "./../config/env";
-
 import {Config, Kernel} from "@fusion.io/framework/Contracts";
 
-
-// First we'll instantiate ConfigManager
+// ---------------------------------------------------------------------------------------------------------------------
+// | Initialize ConfigManager
+// ---------------------------------------------------------------------------------------------------------------------
+// |
+// |
 const config = new ConfigManager(configValue);
 
 container.value(Config, config);
 
-// Overwrite the config base on the application's environment
 config.setEnv(config.get('env'), environmentConfig[config.get('env')]);
 
 (async () => {
-    // Initiate the bootstrap sequence.
+
+    // -----------------------------------------------------------------------------------------------------------------
+    // | Your initialization tasks
+    // -----------------------------------------------------------------------------------------------------------------
+    // | Sometimes, we need to run some tasks to set up the server even before the app bootstrap
+    // | and those tasks might run asynchronously. This is where you can run those tasks.
+    // |
+    // | We suggest to write it in a separate file and import it here.
+    // |
+
+    // Ex:
+    //
+    //  await myHeavyTask();
+
+
+    // -----------------------------------------------------------------------------------------------------------------
+    // | Initialize the bootstrap sequence
+    // -----------------------------------------------------------------------------------------------------------------
+    // |
+
     const providersConfig = config.get('providers');
     const Providers = await Promise.all(providersConfig.map(providerPath => import(providerPath)));
 
@@ -28,9 +47,14 @@ config.setEnv(config.get('env'), environmentConfig[config.get('env')]);
     // After the registration has been finished, we'll start bootstrap the services.
     providers.forEach(provider => provider.boot());
 
-    // Load the booted kernel
+
+    // -----------------------------------------------------------------------------------------------------------------
+    // | Spin up the kernel
+    // -----------------------------------------------------------------------------------------------------------------
+    // |
+    // |
     const kernel = container.make(Kernel);
 
-    // Start the web server
+
     kernel.listen(config.get('http.port'));
 })();
