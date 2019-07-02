@@ -23,8 +23,6 @@ module.exports = {
             transports: [
                 new winston.transports.File({ filename: path.resolve(__dirname + '/../storage/logs/error.log'), level: 'error' }),
                 new winston.transports.File({ filename: path.resolve(__dirname + '/../storage/logs/fusion.log') }),
-
-
                 new winston.transports.Console({ format: winston.format.cli(), level: 'debug' })
             ]
         }

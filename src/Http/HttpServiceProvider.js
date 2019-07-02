@@ -5,25 +5,31 @@ import ServeStatic from "./Middlewares/ServeStatic";
 
 /**
  * Our HttpServiceProvider, here we can specify how our Http layer works.
- * We can tweak it from a simple API server to very sophisticated Web application.
  *
  */
 export default class HttpServiceProvider extends FrameworkProvider {
 
     /**
-     * List of controllers that will be used
+     * List of the global middleware.
+     * It will be applied in the whole application.
      *
-     * @return Array
+     * @return {*[]}
      */
-    controllers() {
+    globalMiddlewares() {
         return [
-            HelloWorldController
+            ServeStatic,
+            CatchError
         ]
     }
 
+    /**
+     * This is a universal place for grouping your middlewares
+     * into a logical unit. So you can re-use it in several places.
+     *
+     * @return {{api: Array, web: *[]}}
+     */
     middlewareGroups() {
         return {
-
             "api": [
 
             ],
@@ -34,10 +40,28 @@ export default class HttpServiceProvider extends FrameworkProvider {
         }
     }
 
-    globalMiddlewares() {
+    /**
+     * List of route groups. Here you can define the route prefix,
+     * the related controllers, and the applied middleware (or middleware group).
+     *
+     */
+    routeGroups() {
         return [
-            ServeStatic,
-            CatchError
+            {
+                middlewares: ['web'],
+                controllers: [
+                    HelloWorldController
+                ]
+            }
         ]
+    }
+
+    /**
+     * Bootstrap the Kernel.
+     */
+    boot() {
+        super.boot();
+
+        //
     }
 }
