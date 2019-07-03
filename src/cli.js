@@ -36,7 +36,18 @@ export default (event, verbose = true) => {
             console.log(chalk.gray(`> Loading external config at [${chalk.cyan(file)}]`));
         });
 
-        event.on('fusion.server.config.loaded', () => {
+        event.on('fusion.server.config.loaded', (config) => {
+
+            if (config.get('debug') && ('production' === process.env.NODE_ENV)) {
+                console.warn(chalk.gray(chalk.bgYellowBright(
+                    `[SECURITY ALERT] Your application is running in production mode, however the [debug] flag is turning on        \n` +
+                    '  Please verify:                                                                                               \n' +
+                    '   - [APP_DEBUG] environment variable. It should NOT be set.                                                   \n' +
+                    '   - [config/index.js] config file, the [debug] field\'s value. It should NOT be true.                          \n' +
+                    '   - [config/env/production.env.js] config file. If it existed, the [debug] field\'s value should NOT be true.  \n'
+                )))
+            }
+
             console.log(chalk.gray('> The server has been configured'));
         });
 

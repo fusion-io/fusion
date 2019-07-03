@@ -17,7 +17,7 @@ module.exports = {
      * Therefore, your application behavior changes.
      *
      */
-    env: process.env.NODE_ENV || 'local',
+    env: process.env.NODE_ENV,
 
     /**
      * The application security keys.
