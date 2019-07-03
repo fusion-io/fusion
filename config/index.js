@@ -33,10 +33,18 @@ module.exports = {
     debug: process.env.APP_DEBUG || false,
 
     /**
+     * The database settings.
+     *
+     * We build on top of knex. So just use knex setting here
+     *
+     * @see https://knexjs.org/
      *
      */
     database: {
 
+        /**
+         * The default database connection.
+         */
         defaultConnection: 'app',
 
         connections: {
@@ -64,7 +72,7 @@ module.exports = {
         static: {
             root: path.resolve(__dirname + '/../public'),
             opts: {
-                // Other options here
+                // koa-static options
             }
         },
 
@@ -86,7 +94,7 @@ module.exports = {
     },
 
     /**
-     * The hasher configuration. Now we only supported BCrypt
+     * The hasher configuration. Now we only support BCrypt
      *
      */
     hash: {
@@ -94,10 +102,10 @@ module.exports = {
     },
 
     /**
-     * The logger service is actually the winston logger. So if you want to customize the logger
-     * Please refer to the winston document.
+     * The logger service is actually the winston logger. So if you want to customize the logger,
+     * please refer to the winston document.
      *
-     * @link(https://www.npmjs.com/package/winston
+     * @see https://www.npmjs.com/package/winston
      *
      */
     logger: {
