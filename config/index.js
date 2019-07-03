@@ -33,6 +33,23 @@ module.exports = {
     debug: process.env.APP_DEBUG || false,
 
     /**
+     *
+     */
+    database: {
+
+        defaultConnection: 'app',
+
+        connections: {
+            app: {
+                client: 'sqlite3',
+                connection: {
+                    filename: path.resolve(__dirname + "/../storage/db.sqlite")
+                }
+            }
+        }
+    },
+
+    /**
      * The HTTP configuration
      *
      */
@@ -65,16 +82,6 @@ module.exports = {
             signed: true,
             rolling: false,
             renew: false,
-        },
-
-        /**
-         * Override URL
-         */
-        url: {
-            replace: process.env.HTTP_URL_REPLACE || false,
-            pathMap: {
-                'HelloWorldController.index': '/people/:name'
-            }
         }
     },
 
@@ -119,6 +126,7 @@ module.exports = {
         '@fusion.io/framework/Logger/LoggerServiceProvider',
         '@fusion.io/framework/Session/SessionServiceProvider',
         '@fusion.io/framework/Hasher/BCryptHasherServiceProvider',
+        '@fusion.io/framework/Database/DatabaseServiceProvider',
 
 
         /**
