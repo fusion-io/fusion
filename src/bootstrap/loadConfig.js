@@ -5,7 +5,9 @@ import {Config} from "@fusion.io/framework/Contracts";
 import path from "path";
 import fs from "fs";
 
-export default async () => {
+export default async (event) => {
+
+    event.emit('fusion.server.config.loading');
 
     const config = new ConfigManager(configValue);
 
@@ -19,13 +21,15 @@ export default async () => {
 
     // Try to load the environment config
     if (fs.existsSync(configFile)) {
+        event.emit('fusion.server.config.env', env, configFile);
         try {
             const envConfig = await import(configFile);
 
             config.merge(envConfig.default);
         } catch (e) {
-            console.warn(`Warning: Failed to load the environment config for [${env}].`);
-            console.warn(e.stack);
+            event.emit('fusion.server.config.env.failed', e);
         }
     }
+
+    event.emit('fusion.server.config.loaded', config);
 }

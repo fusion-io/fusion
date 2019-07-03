@@ -1,7 +1,9 @@
 import loadConfig from "./loadConfig";
 import bootServiceProviders from "./bootServiceProviders";
 
-export default async () => {
+export default async (event) => {
+
+    event.emit('fusion.server.bootstrapping');
 
     // -----------------------------------------------------------------------------------------------------------------
     // | Your initialization tasks
@@ -13,9 +15,11 @@ export default async () => {
     // |
 
 
-    await loadConfig();
+    await loadConfig(event);
 
-    await bootServiceProviders();
+    await bootServiceProviders(event);
 
     // Your task here
+
+    event.emit('fusion.server.bootstrapped');
 };
