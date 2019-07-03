@@ -4,3 +4,4 @@ build
 public/dist
 storage/logs/*.log
 config/env/*.env.js
+db.sqlite
