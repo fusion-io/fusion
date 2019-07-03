@@ -47,9 +47,14 @@ module.exports = {
          */
         defaultConnection: 'app',
 
+        /**
+         * The list of the database connections
+         */
         connections: {
+
             app: {
                 client: 'sqlite3',
+                useNullAsDefault: true,
                 connection: {
                     filename: path.resolve(__dirname + "/../storage/db.sqlite")
                 }
