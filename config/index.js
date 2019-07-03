@@ -123,6 +123,7 @@ module.exports = {
         /**
          * Fusion services
          */
+
         '@fusion.io/framework/Logger/LoggerServiceProvider',
         '@fusion.io/framework/Session/SessionServiceProvider',
         '@fusion.io/framework/Hasher/BCryptHasherServiceProvider',
@@ -131,7 +132,22 @@ module.exports = {
 
         /**
          * Application services
+         *
+         * @important :
+         *
+         *      Please use the relative path from the 'src/' directory, not
+         *      the current configuration file.
+         *
+         *      And all of the your app service provider must be inside
+         *      the 'src' directory.
+         *
+         *      Ex:
+         *          src/MyServiceProvider - wrong
+         *          ./MyServiceProvider - correct
+         *
+         *
          */
+
         './Http/HttpServiceProvider',
         './ErrorHandler/ErrorHandlerServiceProvider'
     ]
