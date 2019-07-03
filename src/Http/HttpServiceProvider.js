@@ -1,6 +1,5 @@
 import {HttpServiceProvider as FrameworkProvider, SessionStartMiddleware as StartSession} from "@fusion.io/framework";
 import HelloWorldController from "./Controllers/HelloWorldController";
-import CatchError from "./Middlewares/CatchError";
 import ServeStatic from "./Middlewares/ServeStatic";
 
 /**
