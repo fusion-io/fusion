@@ -3,7 +3,7 @@ import chalk from "chalk";
 
 export default (event, verbose = true) => {
 
-    const bar1      = new CliProgress.Bar({}, CliProgress.Presets.shades_classic);
+    const serviceLoadingProgressBar      = new CliProgress.Bar({}, CliProgress.Presets.shades_classic);
 
     event.on('fusion.server.started', port => {
         console.log(chalk.cyanBright("Server listening on " + port));
@@ -54,15 +54,15 @@ export default (event, verbose = true) => {
         event.on('fusion.server.service.fetched', (services) => {
             console.log(chalk.gray(`> Loading ${services.length} service(s)`));
 
-            bar1.start(services.length, 0);
+            serviceLoadingProgressBar.start(services.length, 0);
         });
 
         event.on('fusion.server.service.loaded', () => {
-            bar1.increment();
+            serviceLoadingProgressBar.increment();
         });
 
         event.on('fusion.server.service.booted', () => {
-            bar1.stop();
+            serviceLoadingProgressBar.stop();
         });
     }
 }
