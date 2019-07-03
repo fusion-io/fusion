@@ -6,7 +6,7 @@ export default (event, verbose = true) => {
     const serviceLoadingProgressBar      = new CliProgress.Bar({}, CliProgress.Presets.shades_classic);
 
     event.on('fusion.server.started', port => {
-        console.log(chalk.cyanBright("Server listening on " + port));
+        console.log(chalk.cyanBright("Server is listening on " + port));
     });
 
     event.on('fusion.server.config.env.failed', error => {
