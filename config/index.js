@@ -77,7 +77,8 @@ module.exports = {
         },
 
         /**
-         * The session service is running with underlying layer is koa-session middleware. Here we can configure that middleware
+         * The session service is running with underlying layer is koa-session middleware.
+         * Here we can configure that middleware
          *
          * @see https://github.com/koajs/session for more configuration options.
          */
