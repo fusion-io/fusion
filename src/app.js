@@ -2,7 +2,7 @@ import {container} from "@fusion.io/framework";
 import bootstrap from "./bootstrap";
 import {Config, Event, Kernel} from "@fusion.io/framework/Contracts";
 import {EventEmitter} from "events";
-import runCliOutput from "./cli";
+import runCliOutput from "./bin/cli";
 
 const event = new EventEmitter();
 
