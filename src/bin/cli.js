@@ -59,10 +59,15 @@ export default (event, verbose = true) => {
 
         event.on('fusion.server.service.loaded', () => {
             serviceLoadingProgressBar.increment();
+
         });
 
-        event.on('fusion.server.service.booted', () => {
+        event.on('fusion.server.service.booted', (providers) => {
             serviceLoadingProgressBar.stop();
+
+            providers.forEach(provider => {
+                console.log(chalk.gray(`  - ${chalk.green(provider.constructor.name)}`))
+            })
         });
     }
 }

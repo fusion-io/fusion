@@ -40,6 +40,7 @@ export default async (event) => {
     // After the registration has been finished, we'll start bootstrap the services.
     providers.forEach(provider => {
         provider.boot();
-        event.emit('fusion.server.service.booted')
     });
+    event.emit('fusion.server.service.booted', providers);
+
 }
