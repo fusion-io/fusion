@@ -129,15 +129,27 @@ module.exports = {
 
     /**
      * The storage service configuration.
-     * Now we supporting 3 basic drivers: blackhole, memory, filesystem.
+     * Now we supporting 3 basic drivers: blackhole, memory, database.
      *
      */
     storage: {
-        defaultAdapter: "app",
+
+        defaultAdapter: process.env.APP_STORAGE || "memory",
 
         adapters: {
-            app: {
-                driver: "blackhole"
+            database: {
+                driver: 'database',
+                tableName: 'storage',
+                ttl: 60 * 60 * 24
+
+                // You can specify the database connection
+                // that will be used here.
+
+                // connection: "app"
+            },
+
+            memory: {
+                driver: 'memory'
             }
         }
     },

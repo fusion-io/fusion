@@ -6,7 +6,8 @@ export default class HelloWorldController {
 
     @get('/', Storage)
     async index(context, next, storage) {
-        console.log(await storage.store('foo', {foo: 'bar'}));
+        // await storage.store('foo', {foo: 'bar'});
+        console.log(await storage.get('foo'));
         context.body = { message: 'Hello world'};
     }
 }
