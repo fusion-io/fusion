@@ -128,6 +128,21 @@ module.exports = {
     },
 
     /**
+     * The storage service configuration.
+     * Now we supporting 3 basic drivers: blackhole, memory, filesystem.
+     *
+     */
+    storage: {
+        defaultAdapter: "app",
+
+        adapters: {
+            app: {
+                driver: "blackhole"
+            }
+        }
+    },
+
+    /**
      * List of the service providers used in your application
      * Feel free to add more service provider if needed. It's your choice!
      *
@@ -142,6 +157,7 @@ module.exports = {
         '@fusion.io/framework/Session/SessionServiceProvider',
         '@fusion.io/framework/Hasher/BCryptHasherServiceProvider',
         '@fusion.io/framework/Database/DatabaseServiceProvider',
+        '@fusion.io/framework/Storage/StorageServiceProvider',
 
 
         /**
