@@ -88,15 +88,11 @@ module.exports = {
          * @see https://github.com/koajs/session for more configuration options.
          */
         session: {
-            storage: "memory",
+            storage: "console",
             options: {
                 key: 'fusion:session',
                 maxAge: 86400000,
-                overwrite: true, /** (boolean) can overwrite or not (default true) */
-                httpOnly: true, /** (boolean) httpOnly or not (default true) */
-                signed: true, /** (boolean) signed or not (default true) */
-                rolling: false, /** (boolean) Force a session identifier cookie to be set on every response. The expiration is reset to the original maxAge, resetting the expiration countdown. (default is false) */
-                renew: false, /** (boolean) renew session when session is nearly expired, so we can always keep user logged in. (default is false)*/
+                autoCommit: true
             }
         }
     },
@@ -139,6 +135,9 @@ module.exports = {
         defaultAdapter: process.env.APP_STORAGE || "memory",
 
         adapters: {
+            console: {
+                driver: 'blackhole'
+            },
             database: {
                 driver: 'database',
                 tableName: 'storage',
