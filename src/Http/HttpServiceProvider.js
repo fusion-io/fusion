@@ -33,6 +33,7 @@ export default class HttpServiceProvider extends FrameworkProvider {
             ],
 
             "web": [
+                ServeStatic,
                 SessionStartMiddleware
             ]
         }
@@ -48,12 +49,15 @@ export default class HttpServiceProvider extends FrameworkProvider {
             .group({middleware: 'web'}, webRouter => {
                 webRouter
                     .controller(HelloWorldController)
+                    //
                 ;
             })
-            .group({middlewares: 'api'}, apiRouter => {
-                //
+            .group({middlewares: 'api', prefix: '/api'}, apiRouter => {
+                apiRouter
+                    .get('/user/:name', ctx => ctx.body = {message: `Hello ${ctx.params.name}`})
+                    //
+                ;
             })
         ;
     }
 }
-
