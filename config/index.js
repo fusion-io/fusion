@@ -88,14 +88,11 @@ module.exports = {
          * @see https://github.com/koajs/session for more configuration options.
          */
         session: {
-            // We ignored autoCommit option, since the framework will handle it by itself
-            key: 'fusion:session',
-            maxAge: 86400000,
-            overwrite: true,
-            httpOnly: true,
-            signed: true,
-            rolling: false,
-            renew: false,
+            storage: "memory",
+            options: {
+                key: 'fusion:session',
+                maxAge: 86400000
+            }
         }
     },
 
@@ -140,7 +137,7 @@ module.exports = {
             database: {
                 driver: 'database',
                 tableName: 'storage',
-                ttl: 60 * 60 * 24
+                ttl: 86400000
 
                 // You can specify the database connection
                 // that will be used here.
