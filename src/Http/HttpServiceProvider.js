@@ -38,12 +38,22 @@ export default class HttpServiceProvider extends FrameworkProvider {
         }
     }
 
+    /**
+     * Define your routes here.
+     *
+     * @param router
+     */
     routing(router) {
-        router.group({middleware: 'web'}, (router) => {
-            router
-                .controller(HelloWorldController)
-            ;
-        });
+        router
+            .group({middleware: 'web'}, webRouter => {
+                webRouter
+                    .controller(HelloWorldController)
+                ;
+            })
+            .group({middlewares: 'api'}, apiRouter => {
+                //
+            })
+        ;
     }
 }
 
