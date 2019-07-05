@@ -1,6 +1,6 @@
-import {container} from "@fusion.io/framework";
+import {container, HttpKernel} from "@fusion.io/framework";
 import bootstrap from "./bootstrap";
-import {Config, Event, Kernel} from "@fusion.io/framework/Contracts";
+import {Config, Event} from "@fusion.io/framework/Contracts";
 import {EventEmitter} from "events";
 import runCliOutput from "./bin/cli";
 
@@ -13,7 +13,7 @@ runCliOutput(event);
 event.emit('fusion.server.starting');
 
 bootstrap(event).then(() => {
-    const kernel = container.make(Kernel);
+    const kernel = container.make(HttpKernel);
     const config = container.make(Config);
 
     kernel.listen(config.get('http.port'), () => {

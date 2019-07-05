@@ -1,4 +1,4 @@
-import {HttpServiceProvider as FrameworkProvider, SessionStartMiddleware as StartSession} from "@fusion.io/framework";
+import {HttpServiceProvider as FrameworkProvider, SessionStartMiddleware} from "@fusion.io/framework";
 import HelloWorldController from "./Controllers/HelloWorldController";
 import ServeStatic from "./Middlewares/ServeStatic";
 
@@ -33,33 +33,17 @@ export default class HttpServiceProvider extends FrameworkProvider {
             ],
 
             "web": [
-                StartSession
+                SessionStartMiddleware
             ]
         }
     }
 
-    /**
-     * List of route groups. Here you can define the route prefix,
-     * the related controllers, and the applied middleware (or middleware group).
-     *
-     */
-    routeGroups() {
-        return [
-            {
-                middlewares: ['web'],
-                controllers: [
-                    HelloWorldController
-                ]
-            }
-        ]
-    }
-
-    /**
-     * Bootstrap the Kernel.
-     */
-    boot() {
-        super.boot();
-
-        //
+    routing(router) {
+        router.group({middleware: 'web'}, (router) => {
+            router
+                .controller(HelloWorldController)
+            ;
+        });
     }
 }
+
