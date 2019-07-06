@@ -5,7 +5,6 @@ export default class HelloWorldController {
 
     @get('/')
     async index(context) {
-        // context.body = { message: 'Hello world'};
         return context.redirectToRoute("api.user", {name: 'world'});
     }
 }

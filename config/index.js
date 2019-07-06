@@ -192,6 +192,7 @@ module.exports = {
          */
 
         './Http/HttpServiceProvider',
-        './ErrorHandler/ErrorHandlerServiceProvider'
+        './ErrorHandler/ErrorHandlerServiceProvider',
+        './App/AppServiceProvider'
     ]
 };
