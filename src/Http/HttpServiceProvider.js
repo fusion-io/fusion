@@ -16,8 +16,8 @@ export default class HttpServiceProvider extends FrameworkProvider {
      */
     globalMiddlewares() {
         return [
-            ServeStatic,
-            AccessLogger
+            AccessLogger,
+            ServeStatic
         ]
     }
 
@@ -34,7 +34,6 @@ export default class HttpServiceProvider extends FrameworkProvider {
             ],
 
             "web": [
-                ServeStatic,
                 SessionStartMiddleware
             ]
         }
@@ -47,18 +46,24 @@ export default class HttpServiceProvider extends FrameworkProvider {
      */
     routing(router) {
         router
-            .group({middleware: 'web'}, webRouter => {
-                webRouter
-                    .controller(HelloWorldController)
-                    //
-                ;
-            })
-            .group({middlewares: 'api', prefix: '/api'}, apiRouter => {
-                apiRouter
-                    .get('/user/:name', ctx => ctx.body = {message: `Hello ${ctx.params.name}`})
-                    //
-                ;
-            })
+            .group({middleware: 'web'}, router => this.webRouting(router))
+            .group({middlewares: 'api', prefix: '/api/v1'}, router => this.apiRouting(router))
         ;
+    }
+
+    /**
+     *
+     * @param router
+     */
+    webRouting(router) {
+        router.controller(HelloWorldController);
+    }
+
+    /**
+     *
+     * @param router
+     */
+    apiRouting(router) {
+        router.get('api.user', '/user/:name', ctx => ctx.body = {message: `Hello ${ctx.params.name}`});
     }
 }
