@@ -141,7 +141,7 @@ module.exports = {
             database: {
                 driver: 'database',
                 tableName: 'fusion_storages',
-                ttl: 86400000
+                ttl: 86400000,
 
                 // You can specify the database connection
                 // that will be used here.
@@ -161,15 +161,17 @@ module.exports = {
      *
      */
     queue: {
-        defaultConnection: 'database',
+        defaultConnection: process.env.QUEUE_CONNECTION || 'sync',
 
-        connections: {
+        queues: {
             sync: {
                 driver: "sync"
             },
             database: {
                 driver: "database",
-                tableName: "fusion_jobs"
+                tableName: "fusion_jobs",
+
+                // connection: "app"
             }
         }
     },
