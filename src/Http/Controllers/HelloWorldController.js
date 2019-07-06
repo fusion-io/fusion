@@ -6,9 +6,9 @@ import LogJob from "../../LogJob";
 export default class HelloWorldController {
 
     @get('/', Queue)
-    async index(context, next, queue) {
+    async index(context) {
 
-        await new LogJob("Hello World").dispatch();
+        new LogJob('Hello World').dispatch();
 
         return context.body = {
             message: "Hello World"
