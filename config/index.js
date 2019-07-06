@@ -88,7 +88,7 @@ module.exports = {
          * @see https://github.com/koajs/session for more configuration options.
          */
         session: {
-            storage: "console",
+            storage: "memory",
             options: {
                 key: 'fusion:session',
                 maxAge: 86400000,
@@ -135,12 +135,9 @@ module.exports = {
         defaultAdapter: process.env.APP_STORAGE || "memory",
 
         adapters: {
-            console: {
-                driver: 'blackhole'
-            },
             database: {
                 driver: 'database',
-                tableName: 'storage',
+                tableName: 'fusion_storages',
                 ttl: 86400000
 
                 // You can specify the database connection
@@ -151,6 +148,20 @@ module.exports = {
 
             memory: {
                 driver: 'memory'
+            }
+        }
+    },
+
+    queue: {
+        defaultConnection: 'database',
+
+        connections: {
+            sync: {
+                driver: "sync"
+            },
+            database: {
+                driver: "database",
+                tableName: "fusion_jobs"
             }
         }
     },
