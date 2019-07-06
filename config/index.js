@@ -171,6 +171,7 @@ module.exports = {
         '@fusion.io/framework/Hasher/BCryptHasherServiceProvider',
         '@fusion.io/framework/Database/DatabaseServiceProvider',
         '@fusion.io/framework/Storage/StorageServiceProvider',
+        '@fusion.io/framework/Queue/QueueServiceProvider',
 
 
         /**
@@ -193,6 +194,6 @@ module.exports = {
 
         './Http/HttpServiceProvider',
         './ErrorHandler/ErrorHandlerServiceProvider',
-        './App/AppServiceProvider'
+        './AppServiceProvider'
     ]
 };

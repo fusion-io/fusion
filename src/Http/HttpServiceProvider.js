@@ -15,7 +15,7 @@ export default class HttpServiceProvider extends FrameworkProvider {
      */
     globalMiddlewares() {
         return [
-            AccessLogger,
+            // AccessLogger,
             ServeStatic
         ]
     }
