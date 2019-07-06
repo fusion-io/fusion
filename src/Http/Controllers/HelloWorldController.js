@@ -14,6 +14,8 @@ export default class HelloWorldController {
         context.body = {
             hello: context.params.user,
             message: context.session.get('message')
-        }
+        };
+
+        context.statusCode = 201;
     }
 }

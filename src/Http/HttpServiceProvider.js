@@ -1,4 +1,4 @@
-import {HttpServiceProvider as FrameworkProvider, SessionStartMiddleware} from "@fusion.io/framework";
+import {HttpServiceProvider as FrameworkProvider, SessionStartMiddleware, AccessLogger} from "@fusion.io/framework";
 import HelloWorldController from "./Controllers/HelloWorldController";
 import ServeStatic from "./Middlewares/ServeStatic";
 
@@ -16,7 +16,8 @@ export default class HttpServiceProvider extends FrameworkProvider {
      */
     globalMiddlewares() {
         return [
-            ServeStatic
+            ServeStatic,
+            AccessLogger
         ]
     }
 
