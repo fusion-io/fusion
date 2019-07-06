@@ -79,21 +79,21 @@ module.exports = {
             opts: {
                 // koa-static options
             }
-        },
+        }
+    },
 
-        /**
-         * The session service is running with underlying layer is koa-session middleware.
-         * Here we can configure that middleware
-         *
-         * @see https://github.com/koajs/session for more configuration options.
-         */
-        session: {
-            storage: "memory",
-            options: {
-                key: 'fusion:session',
-                maxAge: 86400000,
-                autoCommit: true
-            }
+    /**
+     * The session service is running with underlying layer is koa-session middleware.
+     * Here we can configure that middleware
+     *
+     * @see https://github.com/koajs/session for more configuration options.
+     */
+    session: {
+        driver: "database",
+        tableName: "storage",
+        options: {
+            key: 'fusion:session',
+            maxAge: 86400000
         }
     },
 
