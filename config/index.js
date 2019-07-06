@@ -89,8 +89,11 @@ module.exports = {
      * @see https://github.com/koajs/session for more configuration options.
      */
     session: {
-        driver: "database",
-        tableName: "storage",
+
+        // We supported all of the storage drivers.
+        //  now we'll have memory, blackhole, database
+
+        driver: "memory",
         options: {
             key: 'fusion:session',
             maxAge: 86400000
@@ -152,6 +155,11 @@ module.exports = {
         }
     },
 
+    /**
+     * The Queue configuration. Now we are supporting "database" queue and "sync" queue
+     *
+     *
+     */
     queue: {
         defaultConnection: 'database',
 
