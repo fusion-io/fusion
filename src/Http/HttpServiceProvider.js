@@ -1,6 +1,5 @@
-import {HttpServiceProvider as FrameworkProvider, SessionStartMiddleware, AccessLogger} from "@fusion.io/framework";
+import {HttpServiceProvider as FrameworkProvider, ServeStatic, StartSession, AccessLogger} from "@fusion.io/framework";
 import HelloWorldController from "./Controllers/HelloWorldController";
-import ServeStatic from "./Middlewares/ServeStatic";
 
 /**
  * Our HttpServiceProvider, here we can specify how our Http layer works.
@@ -34,7 +33,7 @@ export default class HttpServiceProvider extends FrameworkProvider {
             ],
 
             "web": [
-                SessionStartMiddleware
+                StartSession
             ]
         }
     }
@@ -47,7 +46,7 @@ export default class HttpServiceProvider extends FrameworkProvider {
     routing(router) {
         router
             .group({middleware: 'web'}, router => this.webRouting(router))
-            .group({middlewares: 'api', prefix: '/api/v1'}, router => this.apiRouting(router))
+            .group({middleware: 'api', prefix: '/api/v1'}, router => this.apiRouting(router))
         ;
     }
 
