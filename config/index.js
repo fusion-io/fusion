@@ -32,19 +32,18 @@ module.exports = {
      */
     debug: process.env.APP_DEBUG || false,
 
+    /**
+     * We use i18next as our major translation service.
+     * Please refer to i18next to see more configuration options
+     *
+     * @see https://www.i18next.com/
+     */
     i18n: {
         lng: 'en',
         fallbackLng: ['en'],
         debug: process.env.APP_DEBUG || false,
         backend: {
-            // path where resources get loaded from
-            loadPath: __dirname + '/../locales/{{lng}}.json',
-
-            // path to post missing resources
-            // addPath: '/locales/{{lng}}/{{ns}}.missing.json',
-
-            // jsonIndent to use when storing json files
-            jsonIndent: 2
+            loadPath: __dirname + '/../locales/{{lng}}.json'
         }
     },
 
