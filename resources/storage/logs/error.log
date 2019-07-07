@@ -1,0 +1,1015 @@
+error: TypeError: context.render is not a function
+    at HelloWorldController.render [as index] (/Users/rikky/WebstormProjects/fusion.io/fusion/src/Http/Controllers/HelloWorldController.js:8:24)
+    at Container.invoke (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/@fusion.io/container/Container.js:150:42)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Http/HttpResolver.js:125:35
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:9)
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:13)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9) {"service":"fusion:local","timestamp":"2019-07-07T03:49:36.912Z"}
+error: Error: template not found: welcome.njk.html
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:290:15)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:282:7)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:329:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:19:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:23:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T04:26:41.326Z"}
+error: Error: template not found: welcome.njk.html
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:290:15)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:282:7)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:329:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:19:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:23:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T04:27:13.202Z"}
+error: Error: template not found: welcome.njk.html
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:290:15)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:282:7)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:329:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:19:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:23:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T04:27:19.272Z"}
+error: Error: template not found: welcome.njk.html
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:290:15)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:282:7)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:329:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:19:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:23:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T04:27:20.539Z"}
+error: Error: template not found: welcome.njk.html
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:290:15)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:282:7)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:329:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:19:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:23:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T04:27:20.733Z"}
+error: Error: template not found: welcome.njk.html
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:290:15)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:282:7)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:329:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:19:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:23:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T04:27:20.908Z"}
+error: Error: template not found: welcome.njk.html
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:290:15)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:282:7)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:329:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:19:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:23:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T04:27:21.079Z"}
+error: Error: template not found: welcome.njk.html
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:290:15)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:282:7)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:329:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:19:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:23:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T04:27:22.087Z"}
+error: Error: template not found: welcome.njk.html
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:290:15)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:282:7)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:329:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:19:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:23:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T04:27:22.273Z"}
+error: Error: template not found: welcome.njk.html
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:290:15)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:282:7)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:329:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:19:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:23:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T04:27:22.577Z"}
+error: Error: template not found: welcome.njk.html
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:290:15)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:282:7)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:329:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:19:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:23:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T04:27:22.763Z"}
+error: TypeError: procedures is not a function
+    at ViewFactory.invokeProcedures (/Users/rikky/WebstormProjects/fusion.io/framework/View/ViewFactory.js:107:13)
+    at ViewFactory.make (/Users/rikky/WebstormProjects/fusion.io/framework/View/ViewFactory.js:30:16)
+    at Object.context.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/RenderView.js:21:51)
+    at HelloWorldController.render [as index] (/Users/rikky/WebstormProjects/fusion.io/fusion/src/Http/Controllers/HelloWorldController.js:8:23)
+    at Container.invoke (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/@fusion.io/container/Container.js:150:42)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Http/HttpResolver.js:125:35
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:22:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Http/HttpResolver.js:48:45
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/lib/router.js:346:16 {"service":"fusion:local","timestamp":"2019-07-07T04:33:53.999Z"}
+error: TypeError: i18n.t is not a function
+    at HelloWorldController.t [as index] (/Users/rikky/WebstormProjects/fusion.io/fusion/src/Http/Controllers/HelloWorldController.js:9:26)
+    at Container.invoke (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/@fusion.io/container/Container.js:150:42)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Http/HttpResolver.js:125:35
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:22:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Http/HttpResolver.js:48:45
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:9) {"service":"fusion:local","timestamp":"2019-07-07T06:03:24.876Z"}
+error: TypeError: i18n.t is not a function
+    at HelloWorldController.t [as index] (/Users/rikky/WebstormProjects/fusion.io/fusion/src/Http/Controllers/HelloWorldController.js:9:26)
+    at Container.invoke (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/@fusion.io/container/Container.js:150:42)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Http/HttpResolver.js:125:35
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:22:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Http/HttpResolver.js:48:45
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:9) {"service":"fusion:local","timestamp":"2019-07-07T06:08:19.097Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html)
+  TypeError: translate is not a function
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:315:9)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:327:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:24:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7) {"service":"fusion:local","timestamp":"2019-07-07T06:54:45.820Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html)
+  TypeError: Cannot read property 'translator' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:315:9)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:327:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:24:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7) {"service":"fusion:local","timestamp":"2019-07-07T06:55:06.579Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html)
+  TypeError: Cannot read property 'translator' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:24:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T06:55:08.407Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html)
+  TypeError: Cannot read property 'translator' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:315:9)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:327:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:24:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7) {"service":"fusion:local","timestamp":"2019-07-07T06:55:12.453Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html)
+  TypeError: Cannot read property 'translator' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:24:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T06:55:39.047Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html)
+  TypeError: Cannot read property 'translator' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:24:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T06:55:40.257Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html)
+  TypeError: Cannot read property 'translator' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:24:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T06:55:40.581Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html)
+  TypeError: Cannot read property 'translator' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:24:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T06:55:40.826Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html)
+  TypeError: Cannot read property 'translator' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:24:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T06:55:41.056Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html)
+  TypeError: Cannot read property 'translator' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:24:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T06:55:41.289Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html)
+  TypeError: Cannot read property 'translator' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:24:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T06:55:41.526Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html)
+  TypeError: Cannot read property 'translator' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:315:9)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:327:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:24:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7) {"service":"fusion:local","timestamp":"2019-07-07T06:55:52.587Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html)
+  TypeError: Cannot read property 'translator' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:315:9)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:327:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:24:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7) {"service":"fusion:local","timestamp":"2019-07-07T06:56:28.449Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html)
+  TypeError: Cannot read property 'translator' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:24:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T06:56:29.027Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html)
+  TypeError: Cannot read property 'translator' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:24:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T06:56:29.262Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html)
+  TypeError: Cannot read property 'translator' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:24:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T06:56:29.459Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html)
+  TypeError: Cannot read property 'translator' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:24:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T06:56:29.615Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html)
+  TypeError: Cannot read property 'translator' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:24:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T06:56:29.838Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 8, Column 11]
+  Error: Unable to call `t`, which is undefined or falsey
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:315:9)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:327:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:24:32)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7) {"service":"fusion:local","timestamp":"2019-07-07T06:59:52.041Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: Cannot read property 'getView' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:315:9)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:327:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7) {"service":"fusion:local","timestamp":"2019-07-07T15:37:26.750Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: Cannot read property 'getView' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:315:9)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:327:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7) {"service":"fusion:local","timestamp":"2019-07-07T15:38:22.122Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: Cannot read property 'getView' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:315:9)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:327:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7) {"service":"fusion:local","timestamp":"2019-07-07T15:38:56.601Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: Cannot read property 'getView' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T15:38:58.037Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: Cannot read property 'getView' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T15:38:58.234Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: Cannot read property 'render' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:315:9)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:327:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7) {"service":"fusion:local","timestamp":"2019-07-07T15:40:42.783Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: firstStepView.getView is not a function
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:315:9)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:327:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7) {"service":"fusion:local","timestamp":"2019-07-07T15:41:08.199Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: firstStepView.getView is not a function
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T15:41:09.125Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: firstStepView.getView is not a function
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T15:41:09.368Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: firstStepView.getView is not a function
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T15:41:09.577Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: firstStepView.getView is not a function
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T15:41:09.761Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: firstStepView.getView is not a function
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T15:41:09.950Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: firstStepView.getView is not a function
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T15:41:10.107Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: firstStepView.getView is not a function
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T15:41:10.335Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: firstStepView.getView is not a function
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:315:9)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:327:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7) {"service":"fusion:local","timestamp":"2019-07-07T15:41:50.697Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: firstStepView.getView is not a function
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T15:41:51.782Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: firstStepView.getView is not a function
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T15:41:52.022Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: firstStepView.getView is not a function
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T15:41:52.214Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: firstStepView.getView is not a function
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T15:42:12.746Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: firstStepView.getView is not a function
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T15:46:45.527Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: firstStepView.getView is not a function
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T15:46:46.730Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: firstStepView.getView is not a function
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T15:46:46.941Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: firstStepView.getView is not a function
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T15:46:47.150Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: firstStepView.getView is not a function
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T15:46:47.415Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: firstStepView.getView is not a function
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:21:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:279:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T15:46:47.586Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html)
+  <h1>hello</h1>
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at eval (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:13:11)
+    at Context.<anonymous> (/Users/rikky/WebstormProjects/fusion.io/framework/View/ViewServiceProvider.js:39:7)
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:12:25)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:315:9)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:327:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34) {"service":"fusion:local","timestamp":"2019-07-07T16:01:57.989Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: engine.getFilter is not a function
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:23:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:315:9)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:327:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:26)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:34)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7) {"service":"fusion:local","timestamp":"2019-07-07T16:02:44.161Z"}
+error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/views/welcome.njk.html) [Line 28, Column 19]
+  TypeError: Cannot read property 'render' of undefined
+    at Object._prettifyError (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:637:18), <anonymous>:23:3)
+    at Template.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:556:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:366:27
+    at createTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:315:9)
+    at handle (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:327:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:280:7)
+    at Object.asyncIter (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/lib.js:286:3)
+    at Environment.getTemplate (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:321:9)
+    at Environment.render (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/nunjucks/src/environment.js:360:10)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:29:21
+    at new Promise (<anonymous>)
+    at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:12)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:40) {"service":"fusion:local","timestamp":"2019-07-07T16:28:46.935Z"}

@@ -43,7 +43,7 @@ module.exports = {
         fallbackLng: ['en'],
         debug: process.env.APP_DEBUG || false,
         backend: {
-            loadPath: __dirname + '/../locales/{{lng}}.json'
+            loadPath: __dirname + '/../resources/locales/{{lng}}.json'
         }
     },
 
@@ -71,7 +71,7 @@ module.exports = {
                 client: 'sqlite3',
                 useNullAsDefault: true,
                 connection: {
-                    filename: path.resolve(__dirname + "/../storage/db.sqlite")
+                    filename: path.resolve(__dirname + "/../resources/storage/db.sqlite")
                 }
             }
         }
@@ -138,8 +138,8 @@ module.exports = {
         ),
         defaultMeta: { service: `fusion:${process.env.NODE_ENV || "local"}` },
         transports: [
-            new winston.transports.File({ filename: path.resolve(__dirname + '/../storage/logs/error.log'), level: 'error' }),
-            new winston.transports.File({ filename: path.resolve(__dirname + '/../storage/logs/fusion.log') })
+            new winston.transports.File({ filename: path.resolve(__dirname + '/../resources/storage/logs/error.log'), level: 'error' }),
+            new winston.transports.File({ filename: path.resolve(__dirname + '/../resources/storage/logs/fusion.log') })
         ]
     },
 
@@ -198,7 +198,7 @@ module.exports = {
      *
      */
     view: {
-        directory: path.resolve(__dirname + '/../views')
+        directory: path.resolve(__dirname + '/../resources/views')
     },
 
     /**

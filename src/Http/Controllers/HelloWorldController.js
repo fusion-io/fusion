@@ -4,7 +4,7 @@ import {get, singleton} from "@fusion.io/framework";
 export default class HelloWorldController {
 
     @get('/')
-    async index(context) {
-        await context.render('welcome');
+    index(context) {
+        return context.render('welcome');
     }
 }
