@@ -176,6 +176,10 @@ module.exports = {
         }
     },
 
+    view: {
+        directory: path.resolve(__dirname + '/../views')
+    },
+
     /**
      * List of the service providers used in your application
      * Feel free to add more service provider if needed. It's your choice!
@@ -193,6 +197,7 @@ module.exports = {
         '@fusion.io/framework/Database/DatabaseServiceProvider',
         '@fusion.io/framework/Storage/StorageServiceProvider',
         '@fusion.io/framework/Queue/QueueServiceProvider',
+        '@fusion.io/framework/View/ViewServiceProvider',
 
 
         /**
