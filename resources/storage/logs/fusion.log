@@ -1608,3 +1608,193 @@ info: 200 - GET / {"service":"fusion:local","timestamp":"2019-07-07T16:57:53.077
 info: 200 - GET / {"service":"fusion:local","timestamp":"2019-07-07T16:58:27.169Z"}
 info: 200 - GET / {"service":"fusion:local","timestamp":"2019-07-07T16:58:28.264Z"}
 info: 200 - GET / {"service":"fusion:local","timestamp":"2019-07-07T16:58:43.048Z"}
+info: 200 - GET / {"service":"fusion:local","timestamp":"2019-07-07T17:00:18.196Z"}
+info: 200 - GET / {"service":"fusion:local","timestamp":"2019-07-07T21:17:25.466Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-07T21:20:33.777Z"}
+error: TypeError: Expected string but received a undefined.
+    at assertString (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/validator/lib/util/assertString.js:28:11)
+    at contains (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/validator/lib/contains.js:15:29)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/ValidatorRegistry.js:46:33
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/ValidatorRegistry.js:29:21
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/RuleSet.js:26:20
+    at Array.map (<anonymous>)
+    at Map.validate (/Users/rikky/WebstormProjects/fusion.io/framework/Form/RuleSet.js:24:46)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/Form.js:56:39
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/lodash/lodash.js:4911:15
+    at Function.forIn (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/lodash/lodash.js:12951:11)
+    at Map.validate (/Users/rikky/WebstormProjects/fusion.io/framework/Form/Form.js:53:21)
+    at Map.validate [as handle] (/Users/rikky/WebstormProjects/fusion.io/fusion/src/Http/FooBarForm.js:12:33)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Http/HttpResolver.js:48:45
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/lib/router.js:346:16 {"service":"fusion:local","timestamp":"2019-07-07T21:21:53.069Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-07T21:23:05.470Z"}
+info: 200 - GET /foobar-form?foo=adfs {"service":"fusion:local","timestamp":"2019-07-07T21:23:34.744Z"}
+info: 200 - GET /foobar-form?foo=adfs {"service":"fusion:local","timestamp":"2019-07-07T21:24:34.902Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-07T21:24:51.211Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-07T21:24:52.801Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-07T21:24:53.068Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-07T21:24:55.632Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-07T21:25:04.462Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-07T21:25:55.351Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-07T21:26:37.239Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-07T21:26:40.349Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-07T21:26:45.732Z"}
+info: 204 - GET /handle {"service":"fusion:local","timestamp":"2019-07-07T21:27:12.479Z"}
+info: 204 - GET /handle {"service":"fusion:local","timestamp":"2019-07-07T21:27:19.692Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-07T21:27:25.784Z"}
+info: 204 - GET /handle?foo=foo&bar=bar {"service":"fusion:local","timestamp":"2019-07-07T21:27:34.971Z"}
+info: 204 - GET /handle {"service":"fusion:local","timestamp":"2019-07-07T21:28:18.349Z"}
+info: 200 - GET / {"service":"fusion:local","timestamp":"2019-07-07T21:28:47.388Z"}
+info: 204 - GET /handle {"service":"fusion:local","timestamp":"2019-07-07T21:28:51.676Z"}
+info: 200 - GET / {"service":"fusion:local","timestamp":"2019-07-07T21:29:20.926Z"}
+info: 200 - GET /handle {"service":"fusion:local","timestamp":"2019-07-07T21:29:28.632Z"}
+info: 200 - GET /handle?foo=foo&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:29:42.360Z"}
+info: 200 - GET /handle?foo=foo&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:29:56.349Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:30:12.826Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:31:09.442Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:31:35.924Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:31:47.432Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:32:05.683Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:32:16.181Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:32:47.099Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:33:00.955Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:33:09.088Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:33:24.606Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:33:41.604Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:33:55.238Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:34:13.972Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:34:19.418Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:34:38.002Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:34:54.051Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:36:14.954Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:37:25.054Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:37:53.810Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:37:57.025Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:38:15.443Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:38:34.084Z"}
+info: 200 - GET /handle?foo=fuu&bar=bar2 {"service":"fusion:local","timestamp":"2019-07-07T21:38:54.981Z"}
+info: 200 - GET /handle?foo=fu {"service":"fusion:local","timestamp":"2019-07-07T21:39:34.154Z"}
+info: 200 - GET /handle?foo=fu {"service":"fusion:local","timestamp":"2019-07-07T21:41:51.301Z"}
+info: 200 - GET /handle?foo=fuxxxxxxxxxx {"service":"fusion:local","timestamp":"2019-07-07T21:42:37.287Z"}
+info: 200 - GET /handle?foo=fuxxxxxxxxxx {"service":"fusion:local","timestamp":"2019-07-07T21:43:42.924Z"}
+info: 200 - GET /handle?foo=fuxxxxxxxxxx {"service":"fusion:local","timestamp":"2019-07-07T21:44:46.535Z"}
+info: 200 - GET /handle?foo=fuxxxxxxxxxx&bar=barzz {"service":"fusion:local","timestamp":"2019-07-07T21:47:18.310Z"}
+info: 200 - GET /handle?foo=&bar=barzz {"service":"fusion:local","timestamp":"2019-07-07T21:47:29.204Z"}
+info: 200 - GET /handle?foo=&bar=barzz {"service":"fusion:local","timestamp":"2019-07-07T21:49:35.165Z"}
+info: 200 - GET /handle?foo=adfadfadsf&bar=barzz {"service":"fusion:local","timestamp":"2019-07-07T21:49:56.601Z"}
+info: 200 - GET /handle?foo=adfadfadsf&bar=barzz {"service":"fusion:local","timestamp":"2019-07-07T21:52:48.393Z"}
+info: 200 - GET /handle?foo=adfadfadsf&bar=barzz {"service":"fusion:local","timestamp":"2019-07-07T21:53:38.836Z"}
+info: 200 - GET /handle?foo=adfadfadsf&bar=barzz {"service":"fusion:local","timestamp":"2019-07-07T21:54:23.030Z"}
+error: TypeError: Expected string but received a undefined.
+    at assertString (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/validator/lib/util/assertString.js:28:11)
+    at Object.contains (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/validator/lib/contains.js:15:29)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/FormServiceProvider.js:41:81
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/ValidatorRegistry.js:46:33
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/ValidatorRegistry.js:29:21
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/RuleSet.js:26:20
+    at Array.map (<anonymous>)
+    at Map.validate (/Users/rikky/WebstormProjects/fusion.io/framework/Form/RuleSet.js:24:46)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/Form.js:56:39
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/lodash/lodash.js:4911:15
+    at Function.forIn (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/lodash/lodash.js:12951:11)
+    at Map.validate (/Users/rikky/WebstormProjects/fusion.io/framework/Form/Form.js:53:21)
+    at Map.validate [as handle] (/Users/rikky/WebstormProjects/fusion.io/fusion/src/Http/FooBarForm.js:13:33)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Http/HttpResolver.js:48:45
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18) {"service":"fusion:local","timestamp":"2019-07-07T21:54:58.105Z"}
+info: 200 - GET /handle?foo=adfadfadsf&bar=barzz {"service":"fusion:local","timestamp":"2019-07-07T21:55:09.155Z"}
+info: 200 - GET /handle?foo=adfadfadsf&bar=barzz {"service":"fusion:local","timestamp":"2019-07-07T21:55:39.304Z"}
+info: 200 - GET /handle?foo=adfadfadsf&bar=barzz {"service":"fusion:local","timestamp":"2019-07-07T22:04:12.355Z"}
+info: 200 - GET /handle?foo=adfadfadsf&bar=barzz {"service":"fusion:local","timestamp":"2019-07-07T22:04:45.166Z"}
+info: 200 - GET /handle?foo=adfadfadsf&bar=barzz {"service":"fusion:local","timestamp":"2019-07-07T22:04:46.264Z"}
+info: 200 - GET /handle?foo=adfadfadsf&bar=barzz {"service":"fusion:local","timestamp":"2019-07-07T22:05:58.549Z"}
+info: 200 - GET /handle?foo=adfadfadsf&bar=barzz {"service":"fusion:local","timestamp":"2019-07-07T22:06:22.925Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-07T22:07:40.874Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-07T22:08:35.723Z"}
+info: 200 - GET /?foo=foo&bar=bar {"service":"fusion:local","timestamp":"2019-07-07T22:08:53.406Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-07T22:09:01.166Z"}
+info: 200 - GET /?foo=foo&bar=bar {"service":"fusion:local","timestamp":"2019-07-07T22:09:46.425Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-07T22:09:51.360Z"}
+info: 200 - GET /handle?foo=foo&bar=bar {"service":"fusion:local","timestamp":"2019-07-07T22:09:54.418Z"}
+info: 200 - GET /handle?foo=foo&bar=bar {"service":"fusion:local","timestamp":"2019-07-07T22:10:14.878Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:32:46.972Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:33:02.193Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:37:26.642Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:37:28.217Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:37:39.595Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:37:40.458Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:37:40.630Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:37:59.864Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:40:34.828Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:41:14.546Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:42:12.270Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:42:53.874Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:43:03.817Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:44:22.008Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:52:56.549Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:52:59.721Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:53:06.386Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:55:08.022Z"}
+error: ReferenceError: args is not defined
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/ValidationResult.js:158:11
+    at Array.map (<anonymous>)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/ValidationResult.js:154:43
+    at Array.map (<anonymous>)
+    at ValidationResult.translate (/Users/rikky/WebstormProjects/fusion.io/framework/Form/ValidationResult.js:149:20)
+    at Map.translate [as handle] (/Users/rikky/WebstormProjects/fusion.io/fusion/src/Http/FooBarForm.js:20:31)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:22:5)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T22:55:33.899Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:55:57.027Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:55:58.688Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:55:59.382Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:55:59.592Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:56:01.507Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:56:02.351Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:56:02.556Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:56:25.409Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:56:26.207Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:56:26.414Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:56:26.641Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:56:26.836Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:56:43.801Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:57:49.440Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:58:02.221Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:59:24.875Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:59:26.085Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:59:31.536Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:59:35.432Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:59:36.169Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:59:36.385Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:59:46.867Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:59:47.140Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:59:47.391Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:59:47.567Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:59:47.745Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:59:47.913Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:59:48.110Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T22:59:48.270Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:00:22.820Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:00:23.552Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:00:23.962Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:00:24.204Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:00:24.397Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:00:25.960Z"}
+info: 204 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:00:26.153Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:00:45.313Z"}
+warn: 404 - GET /favicon.ico {"service":"fusion:local","timestamp":"2019-07-07T23:00:45.498Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:01:55.624Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:03:05.915Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:03:20.372Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:03:23.348Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:03:23.527Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:03:24.378Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:03:24.561Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:03:24.709Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:03:44.931Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:03:51.752Z"}
+info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:03:58.846Z"}

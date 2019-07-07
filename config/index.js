@@ -225,6 +225,7 @@ module.exports = {
         '@fusion.io/framework/Queue/QueueServiceProvider',
         '@fusion.io/framework/View/ViewServiceProvider',
         '@fusion.io/framework/I18N/I18NextServiceProvider',
+        '@fusion.io/framework/Form/FormServiceProvider',
 
 
         /**

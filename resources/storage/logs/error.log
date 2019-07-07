@@ -1013,3 +1013,50 @@ error: Template render error: (/Users/rikky/WebstormProjects/fusion.io/fusion/vi
     at new Promise (<anonymous>)
     at ViewEngineNunjucks.render (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/ViewEngineNunjucks.js:28:12)
     at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:26:40) {"service":"fusion:local","timestamp":"2019-07-07T16:28:46.935Z"}
+error: TypeError: Expected string but received a undefined.
+    at assertString (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/validator/lib/util/assertString.js:28:11)
+    at contains (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/validator/lib/contains.js:15:29)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/ValidatorRegistry.js:46:33
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/ValidatorRegistry.js:29:21
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/RuleSet.js:26:20
+    at Array.map (<anonymous>)
+    at Map.validate (/Users/rikky/WebstormProjects/fusion.io/framework/Form/RuleSet.js:24:46)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/Form.js:56:39
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/lodash/lodash.js:4911:15
+    at Function.forIn (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/lodash/lodash.js:12951:11)
+    at Map.validate (/Users/rikky/WebstormProjects/fusion.io/framework/Form/Form.js:53:21)
+    at Map.validate [as handle] (/Users/rikky/WebstormProjects/fusion.io/fusion/src/Http/FooBarForm.js:12:33)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Http/HttpResolver.js:48:45
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/lib/router.js:346:16 {"service":"fusion:local","timestamp":"2019-07-07T21:21:53.069Z"}
+error: TypeError: Expected string but received a undefined.
+    at assertString (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/validator/lib/util/assertString.js:28:11)
+    at Object.contains (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/validator/lib/contains.js:15:29)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/FormServiceProvider.js:41:81
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/ValidatorRegistry.js:46:33
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/ValidatorRegistry.js:29:21
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/RuleSet.js:26:20
+    at Array.map (<anonymous>)
+    at Map.validate (/Users/rikky/WebstormProjects/fusion.io/framework/Form/RuleSet.js:24:46)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/Form.js:56:39
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/lodash/lodash.js:4911:15
+    at Function.forIn (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/lodash/lodash.js:12951:11)
+    at Map.validate (/Users/rikky/WebstormProjects/fusion.io/framework/Form/Form.js:53:21)
+    at Map.validate [as handle] (/Users/rikky/WebstormProjects/fusion.io/fusion/src/Http/FooBarForm.js:13:33)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Http/HttpResolver.js:48:45
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18) {"service":"fusion:local","timestamp":"2019-07-07T21:54:58.105Z"}
+error: ReferenceError: args is not defined
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/ValidationResult.js:158:11
+    at Array.map (<anonymous>)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Form/ValidationResult.js:154:43
+    at Array.map (<anonymous>)
+    at ValidationResult.translate (/Users/rikky/WebstormProjects/fusion.io/framework/Form/ValidationResult.js:149:20)
+    at Map.translate [as handle] (/Users/rikky/WebstormProjects/fusion.io/fusion/src/Http/FooBarForm.js:20:31)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:22:5)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:47:3)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:7)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
+    at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T22:55:33.899Z"}
