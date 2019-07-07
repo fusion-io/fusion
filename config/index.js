@@ -191,6 +191,12 @@ module.exports = {
         }
     },
 
+    /**
+     * View configuration.
+     * Well, nothing special about it.
+     *
+     *
+     */
     view: {
         directory: path.resolve(__dirname + '/../views')
     },
