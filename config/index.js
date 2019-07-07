@@ -32,6 +32,22 @@ module.exports = {
      */
     debug: process.env.APP_DEBUG || false,
 
+    i18n: {
+        lng: 'en',
+        fallbackLng: ['en'],
+        debug: process.env.APP_DEBUG || false,
+        backend: {
+            // path where resources get loaded from
+            loadPath: __dirname + '/../locales/{{lng}}.json',
+
+            // path to post missing resources
+            // addPath: '/locales/{{lng}}/{{ns}}.missing.json',
+
+            // jsonIndent to use when storing json files
+            jsonIndent: 2
+        }
+    },
+
     /**
      * The database settings.
      *
@@ -198,6 +214,7 @@ module.exports = {
         '@fusion.io/framework/Storage/StorageServiceProvider',
         '@fusion.io/framework/Queue/QueueServiceProvider',
         '@fusion.io/framework/View/ViewServiceProvider',
+        '@fusion.io/framework/I18N/I18NextServiceProvider',
 
 
         /**
