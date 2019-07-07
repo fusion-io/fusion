@@ -1,4 +1,5 @@
-import {job} from "@fusion.io/framework";
+import {job, inject} from "@fusion.io/framework";
+import {Logger} from "@fusion.io/framework/Contracts";
 
 @job(
     job => job.message,
@@ -10,7 +11,8 @@ export default class LogJob {
         this.message  = message;
     }
 
-    async execute() {
-        console.log(this.message);
+    @inject(Logger)
+    async execute(logger) {
+        logger.info(this.message);
     }
 }
