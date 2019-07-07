@@ -193,12 +193,17 @@ module.exports = {
 
     /**
      * View configuration.
-     * Well, nothing special about it.
+     * Well, nothing special about it. We are using Nunjucks as the default engine.
+     *
+     * @see https://mozilla.github.io/nunjucks/
      *
      *
      */
     view: {
-        directory: path.resolve(__dirname + '/../resources/views')
+        directory: path.resolve(__dirname + '/../resources/views'),
+        options: {
+            // Your nunjucks option here
+        }
     },
 
     /**
