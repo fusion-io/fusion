@@ -1060,3 +1060,54 @@ error: ReferenceError: args is not defined
     at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
     at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5)
     at ContextRedirect.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Http/ContextRedirect.js:27:5) {"service":"fusion:local","timestamp":"2019-07-07T22:55:33.899Z"}
+error: TypeError: validationResult.serialize is not a function
+    at Object.serializeFunction (/Users/rikky/WebstormProjects/fusion.io/framework/Form/FormServiceProvider.js:96:79)
+    at SessionSerializer.serialize (/Users/rikky/WebstormProjects/fusion.io/framework/utils/Serializer.js:45:21)
+    at serializeFunction (/Users/rikky/WebstormProjects/fusion.io/framework/Session/SessionManager.js:60:48)
+    at Map.set (/Users/rikky/WebstormProjects/fusion.io/framework/Session/SessionManager.js:63:21)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Session/SessionManager.js:39:12
+    at Array.forEach (<anonymous>)
+    at Map.load (/Users/rikky/WebstormProjects/fusion.io/framework/Session/SessionManager.js:33:13)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:20:18)
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:13)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5) {"service":"fusion:local","timestamp":"2019-07-08T03:15:55.924Z"}
+error: TypeError: validationResult.serialize is not a function
+    at Object.serializeFunction (/Users/rikky/WebstormProjects/fusion.io/framework/Form/FormServiceProvider.js:96:79)
+    at SessionSerializer.serialize (/Users/rikky/WebstormProjects/fusion.io/framework/utils/Serializer.js:45:21)
+    at serializeFunction (/Users/rikky/WebstormProjects/fusion.io/framework/Session/SessionManager.js:60:48)
+    at Map.set (/Users/rikky/WebstormProjects/fusion.io/framework/Session/SessionManager.js:63:21)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Session/SessionManager.js:39:12
+    at Array.forEach (<anonymous>)
+    at Map.load (/Users/rikky/WebstormProjects/fusion.io/framework/Session/SessionManager.js:33:13)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:20:18)
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at session (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-session/index.js:41:13)
+    at serve (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-static/index.js:53:9)
+    at AccessLogger.handle (/Users/rikky/WebstormProjects/fusion.io/framework/Logger/AccessLogger.js:20:5) {"service":"fusion:local","timestamp":"2019-07-08T03:16:52.407Z"}
+error: TypeError: Cannot read property 'reasons' of null
+    at HelloWorldController.show (/Users/rikky/WebstormProjects/fusion.io/fusion/src/Http/Controllers/HelloWorldController.js:15:21)
+    at Container.invoke (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/@fusion.io/container/Container.js:150:42)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Http/HttpResolver.js:125:35
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at RenderNunjuckView.handle (/Users/rikky/WebstormProjects/fusion.io/framework/View/NunjucksEngine/RenderNunjuckView.js:22:11)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/Http/HttpResolver.js:48:45
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/rikky/WebstormProjects/fusion.io/framework/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at _default (/Users/rikky/WebstormProjects/fusion.io/framework/Session/ContextSessionMethods.js:58:9) {"service":"fusion:local","timestamp":"2019-07-08T03:18:57.613Z"}

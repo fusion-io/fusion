@@ -49,7 +49,8 @@
     "postcode": "{{field}} is not a valid postal code",
     "url": "{{field}} is not a valid URL",
     "uppercase": "{{field}} only allows uppercase characters",
-    "matches": "{{field}} does not match with {{args.0}}"
+    "matches": "{{field}} does not match with {{args.0}}",
+    "required": "{{field}} is required"
   }
 }
 
