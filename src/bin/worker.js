@@ -9,7 +9,7 @@ container.value(Event, event);
 
 bootstrap(event).then(() => {
 
-    const worker = container.make(QueueWorker, 1, 1, 1);
+    const worker = container.make(QueueWorker, 1, 5000, 1000);
     const qm     = container.make(Queue);
 
     qm.queue().pull(async (job) => {
