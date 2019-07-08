@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/fusion-io/fusion#readme",
   "dependencies": {
-    "@fusion.io/framework": "^1.3.0",
+    "@fusion.io/framework": "^1.4.0",
     "chalk": "^2.4.2",
     "cli-progress": "^2.1.1",
     "koa": "^2.7.0",
@@ -30,11 +30,11 @@
     "winston": "^3.2.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.5",
-    "@babel/node": "^7.4.5",
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.0",
+    "@babel/node": "^7.5.0",
     "@babel/plugin-proposal-decorators": "^7.4.4",
-    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-env": "^7.5.0",
     "@babel/register": "^7.4.4",
     "babel-plugin-dynamic-import-node": "^2.3.0",
     "nodemon": "^1.19.1",
