@@ -2,7 +2,7 @@ import {Form, form, bind} from "@fusion.io/framework";
 
 @bind()
 @form({
-    foo: 'contains:foo',
+    foo: 'required|contains:foo',
     bar: 'contains:bar'
 })
 export default class FooBarForm extends Form {
@@ -17,8 +17,6 @@ export default class FooBarForm extends Form {
             return await next();
         }
 
-        context.body = result.translate();
-
-        // return context.redirectToRoute('HelloWorldController.showForm').with('errors', result);
+        return context.redirectToRoute('HelloWorldController.showForm').with('errors', result.translate());
     }
 }

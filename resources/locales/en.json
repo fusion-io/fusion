@@ -2,6 +2,7 @@
   "greeting": "Hello World",
 
   "validation": {
-    "contains": "\"{{value}}\" does not contains \"{{args.0}}\""
+    "contains": "\"{{value}}\" does not contains \"{{args.0}}\".",
+    "required": "Field {{field}} is required."
   }
 }

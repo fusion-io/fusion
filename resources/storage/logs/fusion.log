@@ -1799,3 +1799,10 @@ info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timesta
 info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:03:51.752Z"}
 info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:03:58.846Z"}
 info: 200 - GET /handle?foo=fozzzo&bar=basssr {"service":"fusion:local","timestamp":"2019-07-07T23:04:27.273Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-08T02:04:23.306Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-08T02:05:11.425Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-08T02:05:12.509Z"}
+info: 200 - GET / {"service":"fusion:local","timestamp":"2019-07-08T02:05:15.874Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-08T02:05:23.437Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-08T02:05:47.456Z"}
+info: 200 - GET /foobar-form {"service":"fusion:local","timestamp":"2019-07-08T02:05:48.288Z"}
