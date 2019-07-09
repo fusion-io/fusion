@@ -4,10 +4,12 @@ import {
     StartSession,
     AccessLogger,
     RenderView,
-    RenderNunjuckView
+    RenderNunjuckView,
+    RenderHalView
 } from "@fusion.io/framework";
 
 import HelloWorldController from "./Controllers/HelloWorldController";
+import Message from "../HALs/Message";
 
 /**
  * Our HttpServiceProvider, here we can specify how our Http layer works.
@@ -38,7 +40,7 @@ export default class HttpServiceProvider extends FrameworkProvider {
     middlewareGroups() {
         return {
             "api": [
-
+                RenderHalView
             ],
 
             "web": [
@@ -55,8 +57,9 @@ export default class HttpServiceProvider extends FrameworkProvider {
      */
     routing(router) {
         router
-            .group({middleware: 'web'}, router => this.webRouting(router))
             .group({middleware: 'api', prefix: '/api/v1'}, router => this.apiRouting(router))
+            .group({middleware: 'web'}, router => this.webRouting(router))
+
         ;
     }
 
@@ -73,6 +76,6 @@ export default class HttpServiceProvider extends FrameworkProvider {
      * @param router
      */
     apiRouting(router) {
-        router.get('api.user', '/user/:name', ctx => ctx.body = {message: `Hello ${ctx.params.name}`});
+        router.get('api.welcome', '/message/welcome', ctx => ctx.render(Message, {message: 'You are geeks! Finally!', from: 'Fusion.IO'}));
     }
 }
