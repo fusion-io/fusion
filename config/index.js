@@ -150,7 +150,7 @@ module.exports = {
      */
     storage: {
 
-        defaultAdapter: process.env.APP_STORAGE || "memory",
+        defaultAdapter: process.env.APP_STORAGE || "database",
 
         adapters: {
             database: {
