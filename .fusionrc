@@ -4,5 +4,8 @@
   "migrations": {
     "directory": "src/database/migrations",
     "table": "fusion_migrations"
+  },
+  "seeders": {
+    "directory": "src/database/seeds"
   }
 }
