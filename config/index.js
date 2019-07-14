@@ -192,38 +192,6 @@ module.exports = {
     },
 
     /**
-     * We use nodemailer as our core. For more nodemailer transports and options,
-     * please check
-     *
-     * @see https://nodemailer.com/
-     *
-     */
-    mail: {
-        defaultTransport: 'debug',
-
-        transports: {
-            smtp: {
-                host: process.env.MAIL_HOST || 'your mail host server',
-                port: 465,
-                secure: true,
-                auth: {
-                    user: process.env.MAIL_USEr || 'your mail user',
-                    pass: process.env.MAIL_PASSWORD || 'your mail password'
-                }
-            },
-
-            /**
-             * We'll support a special transport called log. It will not actually send an email.
-             * Instead it write the email content to the log.
-             *
-             */
-            debug: {
-                transport: 'log'
-            }
-        }
-    },
-
-    /**
      * View configuration.
      * Well, nothing special about it. We are using Nunjucks as the default engine.
      *
