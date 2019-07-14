@@ -71,7 +71,7 @@ module.exports = {
                 client: 'sqlite3',
                 useNullAsDefault: true,
                 connection: {
-                    filename: path.resolve(__dirname + "/../resources/storage/db.sqlite")
+                    filename: path.resolve(__dirname + "/../resources/db.sqlite")
                 }
             }
         }
@@ -258,7 +258,6 @@ module.exports = {
         '@fusion.io/framework/View/ViewServiceProvider',
         '@fusion.io/framework/I18N/I18NextServiceProvider',
         '@fusion.io/framework/Form/FormServiceProvider',
-        '@fusion.io/framework/Mail/MailerServiceProvider',
 
 
         /**

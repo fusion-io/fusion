@@ -1,0 +1,7 @@
+{
+  "bootstrap": "src/bootstrap",
+  "migrations": {
+    "directory": "src/database/migrations",
+    "table": "fusion_migrations"
+  }
+}
