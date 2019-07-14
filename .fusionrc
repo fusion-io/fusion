@@ -1,5 +1,6 @@
 {
   "bootstrap": "src/bootstrap",
+  "console": "src/console",
   "commands": "src/commands",
   "migrations": {
     "directory": "src/database/migrations",
