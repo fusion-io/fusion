@@ -1,6 +1,6 @@
 {
   "name": "@fusion.io/fusion",
-  "version": "1.4.1",
+  "version": "1.4.3",
   "description": "The Node.JS framework of the Geeks, for the Geeks.",
   "main": "build/index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/fusion-io/fusion#readme",
   "dependencies": {
-    "@fusion.io/framework": "^1.4.0",
+    "@fusion.io/framework": "^1.4.3",
     "chalk": "^2.4.2",
     "cli-progress": "^2.1.1",
     "koa": "^2.7.0",
