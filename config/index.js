@@ -166,6 +166,10 @@ module.exports = {
 
             memory: {
                 driver: 'memory'
+            },
+
+            blackhole: {
+                driver: 'blackhole'
             }
         }
     },
