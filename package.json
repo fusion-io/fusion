@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/fusion-io/fusion#readme",
   "dependencies": {
-    "@fusion.io/framework": "^1.5.7",
+    "@fusion.io/framework": "^1.5.8",
     "chalk": "^2.4.2",
     "cli-progress": "^2.1.1",
     "koa": "^2.7.0",
