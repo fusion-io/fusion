@@ -1,10 +1,12 @@
 import {get, singleton} from "@fusion.io/framework";
+import HelloJob from "../../HelloJob";
 
 @singleton()
 export default class HelloWorldController {
 
     @get('/')
-    index(context) {
-        return context.render('welcome');
+    async index(context) {
+        await new HelloJob(Date.now()).dispatch();
+        return await context.render('welcome');
     }
 }
