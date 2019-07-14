@@ -150,7 +150,7 @@ module.exports = {
      */
     storage: {
 
-        defaultAdapter: process.env.APP_STORAGE || "database",
+        defaultAdapter: process.env.APP_STORAGE || "blackhole",
 
         adapters: {
             database: {
