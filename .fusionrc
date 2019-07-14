@@ -1,6 +1,6 @@
 {
   "bootstrap": "src/bootstrap",
-  "command": "src/commands",
+  "commands": "src/commands",
   "migrations": {
     "directory": "src/database/migrations",
     "table": "fusion_migrations"
