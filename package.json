@@ -37,7 +37,6 @@
     "@babel/preset-env": "^7.5.4",
     "@babel/register": "^7.4.4",
     "babel-plugin-dynamic-import-node": "^2.3.0",
-    "nodemon": "^1.19.1",
-    "sqlite3": "^4.0.9"
+    "nodemon": "^1.19.1"
   }
 }
