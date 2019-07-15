@@ -1,6 +1,6 @@
 {
   "name": "@fusion.io/fusion",
-  "version": "1.5.8",
+  "version": "1.5.9",
   "description": "The Node.JS framework of the Geeks, for the Geeks.",
   "main": "build/index.js",
   "scripts": {
